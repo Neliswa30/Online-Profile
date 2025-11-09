@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Neliswa Mabaso | Web Developer & Data Analyst</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body data-theme="light">
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <div class="brand">Neliswa Mabaso</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="project.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <div class="controls">
+        <button class="toggle" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+    <div class="floating-shape shape-5"></div>
+  </div>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">💬 Let's Talk</div>
+        
+        <h1 class="hero-title">
+          <span class="title-line">Let's Create</span>
+          <span class="title-line highlight">Something Amazing</span>
+        </h1>
+        
+        <p class="hero-description">
+          Ready to bring your ideas to life? Whether you have a project in mind or just want to say hello, 
+          I'd love to hear from you. Let's discuss how we can work together.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="24">0</div>
+            <div class="stat-label">Hour Response</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="20">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-main">
+    <div class="container">
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <div class="form-section">
+          <h2>Send Me a Message</h2>
+          <p class="form-subtitle">Fill out the form below and I'll get back to you within 24 hours.</p>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Your Full Name" 
+                  required
+                  aria-required="true"
+                >
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="input-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="you@example.com" 
+                  required
+                  aria-required="true"
+                >
+                <span class="error-message" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                class="form-input" 
+                placeholder="What's this about?"
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                placeholder="Tell me about your project, ideas, or how I can help you..." 
+                rows="6"
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display: none;">
+                <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <circle cx="12" cy="12" r="10" stroke-width="2" stroke-linecap="round" stroke-dasharray="32" stroke-dashoffset="32">
+                    <animate attributeName="stroke-dashoffset" dur="1.5s" values="32;0;32" repeatCount="indefinite" />
+                  </circle>
+                </svg>
+                Sending...
+              </span>
+            </button>
+          </form>
+
+          <!-- Form Status Message -->
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+        </div>
+
+        <!-- Contact Information -->
+        <aside class="contact-info">
+          <div class="info-card">
+            <h2>Get In Touch</h2>
+            <p class="info-subtitle">Prefer other ways to connect? Here's how you can reach me.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">📧</div>
+                <div class="method-details">
+                  <h4>Email Me</h4>
+                  <a href="mailto:neliswamabaso1998@gmail.com" class="contact-link">
+                    neliswamabaso1998@gmail.com
+                  </a>
+                  <p>I typically respond within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">💼</div>
+                <div class="method-details">
+                  <h4>LinkedIn</h4>
+                  <a href="https://linkedin.com/in/neliswa-mabaso" class="contact-link" target="_blank" rel="noopener">
+                    Connect on LinkedIn
+                  </a>
+                  <p>Let's build our professional network</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">📍</div>
+                <div class="method-details">
+                  <h4>Location</h4>
+                  <p>Western Cape, South Africa</p>
+                  <p>Available for remote work worldwide</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">🕒</div>
+                <div class="method-details">
+                  <h4>Response Time</h4>
+                  <p>Within 24 hours</p>
+                  <p>Monday - Friday</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability">
+              <div class="availability-badge">
+                <span class="status-dot"></span>
+                Currently available for new projects
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>How long does a typical project take?</h3>
+          <p>Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex web applications can take 2-3 months. I'll provide a detailed timeline during our initial consultation.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>Do you work with all clients?</h3>
+          <p>Absolutely! I work with clients worldwide. All communication and project management are handled remotely, and I'm flexible with time zones to ensure smooth collaboration.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>What's your development process?</h3>
+          <p>I follow an agile approach: Discovery & Planning → Design & Prototyping → Development → Testing & Quality Assurance → Deployment → Support & Maintenance.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>Do you provide ongoing support?</h3>
+          <p>Yes! I offer ongoing maintenance and support packages to ensure your project continues to perform optimally after launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's turn your ideas into reality. Get in touch today for a free consultation.</p>
+        <div class="cta-actions">
+          <a href="mailto:neliswamabaso1998@gmail.com" class="btn btn-primary large">Email Me Directly</a>
+          <a href="project.html" class="btn btn-secondary large">View My Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand">Neliswa Mabaso</div>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:neliswamabaso1998@gmail.com" class="footer-link">📧 Email</a>
+          <a href="https://linkedin.com/in/neliswa-mabaso" class="footer-link">💼 LinkedIn</a>
+          <a href="Neliswa Mabaso CV August.pdf" download class="footer-link">📄 Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Neliswa Mabaso. Crafted with 💜 and code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

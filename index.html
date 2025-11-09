@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Neliswa Mabaso | Web Developer & Data Analyst</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body data-theme="light">
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <div class="brand">Neliswa Mabaso</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="project.html" class="nav-link">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="controls">
+        <button class="toggle" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container container">
+      <div class="hero-content">
+        <div class="hero-badge">👋 Welcome to my digital space</div>
+        
+        <h1 class="hero-title">
+          <span class="title-line">Crafting</span>
+          <span class="title-line highlight">
+            <span class="typed-text" id="typed"></span>
+            <span class="cursor">|</span>
+          </span>
+          <span class="title-line">Experiences</span>
+        </h1>
+        
+        <p class="hero-description">
+          I transform complex ideas into <strong>elegant digital solutions</strong> that drive results. 
+          Specializing in web development, data analytics, and user-centric design.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="project.html" class="btn btn-primary">
+            <span>View My Work</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            <span>Let's Connect</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-container">
+          <!-- Animated Code Snippet -->
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-title">portfolio.js</span>
+            </div>
+            <div class="code-content">
+              <pre><code class="language-javascript">// Crafting digital experiences
+const developer = {
+  name: "Neliswa Mabaso",
+  role: "Business/System Analyst",
+  skills: ["Html", "JavaScript", "Power BI"],
+  passion: "Transforming ideas into reality",
+  location: "Western Cape, SA"
+};
+
+function createMagic() {
+  return innovativeSolutions + 
+         beautifulDesigns;
+}</code></pre>
+            </div>
+          </div>
+
+          <!-- Floating Tech Icons -->
+          <div class="floating-tech">
+            <div class="tech-icon" data-tooltip="React">⚛️</div>
+            <div class="tech-icon" data-tooltip="JavaScript">🟨</div>
+            <div class="tech-icon" data-tooltip="Power BI">📊</div>
+            <div class="tech-icon" data-tooltip="CSS3">🎨</div>
+            <div class="tech-icon" data-tooltip="Data Analytics">📈</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">Transforming visions into digital reality</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Building responsive, performant websites and web applications with modern technologies.</p>
+          <ul class="service-features">
+            <li>React & JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Clean Code</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Data Analytics</h3>
+          <p>Transforming complex data into actionable insights with Power BI and data visualization.</p>
+          <ul class="service-features">
+            <li>Power BI Dashboards</li>
+            <li>Data Visualization</li>
+            <li>Business Intelligence</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive, user-friendly interfaces that enhance engagement and conversion.</p>
+          <ul class="service-features">
+            <li>User Research</li>
+            <li>Prototyping</li>
+            <li>Visual Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="featured-projects">
+        <div class="container">
+        <header>
+            <h1>Featured Projects</h1>
+            <p class="subtitle">A showcase of my latest work and technical capabilities</p>
+        </header>
+        
+        <div class="projects-grid">
+            <!-- E-commerce Platform Card -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2 class="project-title">E-commerce Platform</h2>
+                    <p class="project-description">Web Designer, e-commerce solution with Html, SQL, and MongoDB</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Html/CSS</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="project-footer">
+                    <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right project-icon"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Power BI Dashboard Card -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2 class="project-title">Power BI Dashboard</h2>
+                    <p class="project-description">Interactive business intelligence dashboard for sales analytics</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">Data Modeling</span>
+                </div>
+                <div class="project-footer">
+                    <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right project-icon"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Portfolio Website Card -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h2 class="project-title">Portfolio Website</h2>
+                    <p class="project-description">Modern, responsive portfolio with smooth animations and dark mode</p>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">React</span>
+                </div>
+                <div class="project-footer">
+                    <a href="#" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right project-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="section-cta">
+        <a href="project.html" class="btn btn-outline">
+          View All Projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Client Love</h2>
+        <p class="section-subtitle">What people say about working with me</p>
+      </div>
+
+      <div class="testimonials-carousel">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">❝</div>
+            <p>"Neliswa delivered a clean, modern site on time — excellent communication and attention to detail throughout the project."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">PM</div>
+            <div class="author-info">
+              <strong>Project Manager</strong>
+              <span>Tech Startup</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">❝</div>
+            <p>"Her Power BI reports transformed our monthly reporting process. Complex data became understandable and actionable."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SH</div>
+            <div class="author-info">
+              <strong>Stakeholder</strong>
+              <span>Corporate Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's collaborate to bring your ideas to life with cutting-edge technology and design.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary large">Get In Touch</a>
+          <a href="about.html" class="btn btn-secondary large">Learn More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand">Neliswa Mabaso</div>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:neliswamabaso1998@gmail.com" class="footer-link">📧 Email</a>
+          <a href="https://www.linkedin.com/in/neliswa-mabaso-70b705203" class="footer-link" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+          <a href="Neliswa Mabaso CV August.pdf" download class="footer-link">📄 Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Neliswa Mabaso. Crafted with 💜 and code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

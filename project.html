@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Neliswa Mabaso | Web Developer & Data Analyst</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/project.css" />
+</head>
+<body data-theme="light">
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <div class="brand">Neliswa Mabaso</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="project.html" class="nav-link active">Projects</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="controls">
+        <button class="toggle" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+  </div>
+
+  <!-- Projects Hero -->
+  <section class="projects-hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🚀 My Work</div>
+        <h1 class="hero-title">Featured Projects</h1>
+        <p class="hero-description">
+          A collection of my recent work in web development, data analytics, and UI/UX design. 
+          Each project represents a unique challenge and creative solution.
+        </p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Web Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">Data Dashboards</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">UI Designs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-main">
+    <div class="container">
+      <!-- Project Filters -->
+      <div class="filters-container">
+        <div class="filters" id="filters" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span class="filter-icon">🌟</span>
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">
+            <span class="filter-icon">💻</span>
+            Web Development
+          </button>
+          <button class="filter-btn" data-filter="data" role="tab" aria-selected="false">
+            <span class="filter-icon">📊</span>
+            Data Analytics
+          </button>
+          <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">
+            <span class="filter-icon">🎨</span>
+            UI/UX Design
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Web Development Projects -->
+        <article class="project-card" data-type="web">
+          <div class="project-image web-bg">
+            <div class="project-overlay">
+              <span class="project-badge">Featured</span>
+              <div class="project-links">
+                <button class="project-link-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-type web-type">Web Development</div>
+            <h3 class="project-title">E-commerce Platform</h3>
+            <p class="project-description">
+              Web Designer e-commerce solution with Html, SQL, and MongoDB featuring user authentication, 
+              payment integration, and admin dashboard.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Html</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+            <div class="project-actions">
+              <a href="projects/ecommerce.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="web">
+          <div class="project-image portfolio-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <button class="project-link-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-type web-type">Web Development</div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              Modern, responsive portfolio website with smooth animations, dark mode toggle, 
+              and optimized performance across all devices.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+            </div>
+            <div class="project-actions">
+              <a href="projects/portfolio.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Data Analytics Projects -->
+        <article class="project-card" data-type="data">
+          <div class="project-image data-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <button class="project-link-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-type data-type">Data Analytics</div>
+            <h3 class="project-title">Power BI Dashboard</h3>
+            <p class="project-description">
+              Interactive business intelligence dashboard for DEDAT projects with real-time data 
+              visualization, KPI tracking, and predictive analytics.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">DAX</span>
+              <span class="tech-tag">Data Modeling</span>
+            </div>
+            <div class="project-actions">
+              <a href="projects/powerbi-dashboard.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="data">
+          <div class="project-image analytics-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <button class="project-link-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-type data-type">Data Analytics</div>
+            <h3 class="project-title">Sales Analytics Platform</h3>
+            <p class="project-description">
+              Comprehensive sales analytics platform with trend analysis, forecasting models, 
+              and interactive reporting for business intelligence.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Data Visualization</span>
+            </div>
+            <div class="project-actions">
+              <a href="projects/sales-analytics.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UI/UX Design Projects -->
+        <article class="project-card" data-type="design">
+          <div class="project-image design-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <button class="project-link-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-type design-type">UI/UX Design</div>
+            <h3 class="project-title">Mobile Banking App</h3>
+            <p class="project-description">
+              Modern mobile banking interface with focus on user experience, accessibility, 
+              and intuitive navigation for financial transactions.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Prototyping</span>
+              <span class="tech-tag">User Research</span>
+            </div>
+            <div class="project-actions">
+              <a href="projects/banking-ui.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-type="design">
+          <div class="project-image ui-bg">
+            <div class="project-overlay">
+              <div class="project-links">
+                <button class="project-link-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-type design-type">UI/UX Design</div>
+            <h3 class="project-title">E-learning Platform</h3>
+            <p class="project-description">
+              User-centered design for an e-learning platform with intuitive course navigation, 
+              progress tracking, and engaging learning experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Adobe XD</span>
+              <span class="tech-tag">User Testing</span>
+            </div>>
+            <div class="project-actions">
+              <a href="projects/elearning.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- No Results Message -->
+      <div id="noResults" class="no-results hidden">
+        <div class="no-results-content">
+          <div class="no-results-icon">🔍</div>
+          <h3>No projects found</h3>
+          <p>Try selecting a different filter or category</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="projects-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's collaborate to bring your ideas to life with cutting-edge technology and design.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary large">Start a Project</a>
+          <a href="about.html" class="btn btn-secondary large">Learn About My Process</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand">Neliswa Mabaso</div>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:neliswamabaso1998@gmail.com" class="footer-link">📧 Email</a>
+          <a href="https://linkedin.com/in/neliswa-mabaso" class="footer-link">💼 LinkedIn</a>
+          <a href="Neliswa Mabaso CV August.pdf" download class="footer-link">📄 Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Neliswa Mabaso. Crafted with 💜 and code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>
